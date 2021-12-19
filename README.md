@@ -22,7 +22,9 @@ The following columns were considered to be the features of the model:
 
 - The first deep-learning neural network model we used consists of two hidden layers with 80 and 30 neurons respectively.
 - The input data returns to us showing 43 features and 25,724 samples
+
 ![](Resources/model_80_30.PNG)
+
 - In order to increase the efficiency of the process, we used to ReLU activation functions for the hidden layers
 - Results shows the model accuracy being below 75%.
 - In order to increase the accuracy of the model, we utilized bucketing for ASK_AMT and organized the returned values by intervals.
