@@ -18,3 +18,16 @@ The following columns were considered to be the features of the model:
 - SPECIAL_CONSIDERATIONS — listed as "Special consideration for application"
 - ASK_AMT — listed as "Funding amount requested" 
 
+### Evaluation of Model
+
+- The first deep-learning neural network model we used consists of two hidden layers with 80 and 30 neurons respectively.
+- The input data returns to us showing 43 features and 25,724 samples
+![](Resources/model_80_30.PNG)
+- In order to increase the efficiency of the process, we used to ReLU activation functions for the hidden layers
+- Results shows the model accuracy being below 75%.
+- In order to increase the accuracy of the model, we utilized bucketing for ASK_AMT and organized the returned values by intervals.
+- We also tried using the tanh acitvation function but it also did not help to improve the model's performance.
+
+## Summary
+
+After our analysis, we did not reach the target of 75% accuracy. We can assume that the model for this analysis simply was not outperforming as in this case, a 75% score is average especially in a model used to identify effectiveness. Due to the dataset consisting of binary classification, one supervised machine learning model that can be applied in this scenario is the Random Forest Classifier sampler model. With the Random Forest Classifier, we can combine multiple trees to display a classified results which can then be used in evaluating its accuracy performance.
